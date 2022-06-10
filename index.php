@@ -11,7 +11,11 @@
       array_push($emojis, $i);
     }
 
-   
+   //random number gets a number between min and max numbers
+//to get a random emoji
+   $random = rand(0, count($emojis) -1);
+   $emoji = $emojis[$random];
+
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -27,7 +31,8 @@
   <div class="container">
     <div class="row my-3">
       <div class="col">
-        <h1 class="display-4 text-center">Emoji</h1>
+        <h1 class="display-4 text-center">Emoji &#<?php echo $emoji; ?>;
+      </h1>
       </div>
     </div>
     <div class="row">
