@@ -2,7 +2,15 @@
     // Emoji Smileys
     // 128512 - 128567
     // 129296 - 129327
-    
+    $emojis = [];
+    for ($i = 128512; $i <= 128567; $i++) {
+      array_push($emojis, $i);
+    }
+    $emojis = [];
+    for ($i = 129296; $i <= 129327; $i++) {
+      array_push($emojis, $i);
+    }
+
 ?>
 <!DOCTYPE html>
 <html lang="en">
