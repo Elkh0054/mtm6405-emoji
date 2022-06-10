@@ -11,6 +11,7 @@
       array_push($emojis, $i);
     }
 
+   
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -30,14 +31,20 @@
       </div>
     </div>
     <div class="row">
+
+<?php foreach ($emojis as $number) : ?>
+
       <div class="col-2 mb-3">
         <div class="card">
           <div class="card-body text-center">
-            <p class="display-4 d-flex justify-content-center align-items-center mb-0">&#128512;</p>
-            <code>128512</code>
+            <p class="display-4 d-flex justify-content-center align-items-center mb-0">&#<?php echo $number;?>;</p>
+            <code><?php echo $number;?></code>
           </div>
         </div>
       </div>
+
+<?php endforeach; ?>
+
     </div>
   </div>
   
